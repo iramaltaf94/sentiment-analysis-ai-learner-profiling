@@ -1,5 +1,3 @@
-# sentiment-analysis-ai-learner-profiling
-Live observation, NLTK VADER text analysis and AI profile cards for learners
 # Sentiment Analysis & AI Profiling of Learners
 
 A team project (3 members) done between April 2026 and July 2026, with the approval of Chinar Quantum AI.
@@ -52,11 +50,11 @@ How the text scores work:
 
 ## Files
 
-01_Iram_Text_Analysis_NLTK_VADER.ipynb: my text analysis (18 learners)
-01_Iram_Text_Analysis_NLTK_VADER_Preview.pdf: how my text analysis looks
-02_Iram_AI_Profile_Cards_Groq.ipynb: my profile cards (19 learners)
-02_Iram_AI_Profile_Cards_Groq_Preview.pdf: how my profile cards look
-03_Team_Unified_Analytics_Platform.ipynb: the unified notebook of the whole team. It has the structured live observation data, the AI profiling summary, the classification, the text analysis and a 360 degree profile for each learner. My parts above are included in it.
+- 01_Iram_Text_Analysis_NLTK_VADER.ipynb: my text analysis (18 learners)
+- 01_Iram_Text_Analysis_NLTK_VADER_Preview.pdf: how my text analysis looks
+- 02_Iram_AI_Profile_Cards_Groq.ipynb: my profile cards (19 learners)
+- 02_Iram_AI_Profile_Cards_Groq_Preview.pdf: how my profile cards look
+- 03_Team_Unified_Analytics_Platform.ipynb: the unified notebook of the whole team. It has the structured live observation data, the AI profiling summary, the classification, the text analysis and a 360 degree profile for each learner. My parts above are included in it.
 
 ## How to view
 
