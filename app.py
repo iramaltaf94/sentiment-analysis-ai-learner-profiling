@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import nltk
 import numpy as np
 import pandas as pd
+import plotly.express as px
 import streamlit as st
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
@@ -116,6 +117,11 @@ with tab_over:
     plt.tight_layout()
     st.pyplot(fig_c)
     plt.close(fig_c)
+
+    st.subheader("3D view: Vocal, Flow and Linguistic")
+    fig3 = px.scatter_3d(df, x="Vocal", y="Flow", z="Linguistic", hover_name="Student")
+    st.plotly_chart(fig3, use_container_width=True)
+    st.caption("Each dot is one learner. Scores only, no grouping.")
 
 with tab_one:
     student = st.selectbox("Choose a learner", STUDENTS)
