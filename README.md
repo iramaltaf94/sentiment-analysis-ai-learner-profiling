@@ -1,4 +1,5 @@
 # Sentiment Analysis & AI Profiling of Learners
+**Live dashboard:** https://learner-analytics-iram.streamlit.app
 
 A team project (3 members) done between April 2026 and July 2026, with the approval of Chinar Quantum AI.
 
