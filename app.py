@@ -99,7 +99,23 @@ with tab_over:
     df = overview_df()
     st.dataframe(df, use_container_width=True, hide_index=True)
     st.subheader("Sentiment (18 learners with transcripts)")
-    st.bar_chart(df[df["Sentiment"] != "no transcript"]["Sentiment"].value_counts())
+    counts = df[df["Sentiment"] != "no transcript"]["Sentiment"].value_counts()
+    s1, s2, s3 = st.columns(3)
+    s1.metric("Positive", int(counts.get("Positive", 0)))
+    s2.metric("Neutral", int(counts.get("Neutral", 0)))
+    s3.metric("Negative", int(counts.get("Negative", 0)))
+
+    st.subheader("Confidence score per learner (/10)")
+    conf = df.dropna(subset=["Confidence (/10)"])
+    fig_c, ax_c = plt.subplots(figsize=(10, 3.2))
+    ax_c.bar([int(s.split()[1]) for s in conf["Student"]], conf["Confidence (/10)"], color="#2e86de")
+    ax_c.set_xlabel("Student number")
+    ax_c.set_ylabel("Confidence (/10)")
+    ax_c.set_ylim(0, 10)
+    ax_c.set_xticks([int(s.split()[1]) for s in conf["Student"]])
+    plt.tight_layout()
+    st.pyplot(fig_c)
+    plt.close(fig_c)
 
 with tab_one:
     student = st.selectbox("Choose a learner", STUDENTS)
@@ -145,7 +161,7 @@ with tab_one:
         else:
             x1, x2, x3 = st.columns(3)
             x1.metric("Confidence", f"{t['confidence']}/10")
-            x2.metric("Cognitive load", f"{t['cognitive_load']} ({t['hesitation_words']} words)")
+            x2.metric("Cognitive load", f"{t['cognitive_load']} ({t['hesitation_words']} hesitation words)")
             x3.metric("Sentiment", f"{t['sentiment']} ({t['compound']})")
             r = {"high": t["high"], "low": t["low"], "confidence": t["confidence"],
                  "hes": t["hesitation_words"], "load": t["cognitive_load"], "sentiment": t["sentiment"],
@@ -166,7 +182,7 @@ with tab_try:
         r = analyze(text, split_keywords(high), split_keywords(low))
         y1, y2, y3 = st.columns(3)
         y1.metric("Confidence", f"{r['confidence']}/10")
-        y2.metric("Cognitive load", f"{r['load']} ({r['hes']} words)")
+        y2.metric("Cognitive load", f"{r['load']} ({r['hes']} hesitation words)")
         y3.metric("Sentiment", f"{r['sentiment']} ({r['compound']})")
         fig_y = text_charts(r, "Interaction analysis")
         st.pyplot(fig_y)
