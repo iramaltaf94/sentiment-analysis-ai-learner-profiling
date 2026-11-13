@@ -9,7 +9,7 @@ Learner evaluations often reduce a person to one score. We wanted to see what me
 
 ## Where and on whom
 
-Chinar Quantum AI runs an introductory AI course called "Future AI" (FAI) for new learners, with one-on-one mentoring. We worked on real data from these sessions, covering 19 learners. All learner names in this repository are changed to Student 1 to Student 19. The results are real. Nothing is made up. The original data files are not shared.
+Chinar Quantum AI runs an introductory AI course called "Future AI" (FAI) for new learners, with one-on-one mentoring. We worked on real data from these sessions, covering 19 learners. All learner names in this repository are changed to Student 1 to Student 19. The results are real. Nothing is made up. The original data files (CSV) are not shared. The unified notebook shows the transcript text that was used for the analysis.
 
 ## How the team worked
 
