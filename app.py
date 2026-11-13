@@ -47,7 +47,7 @@ def radar(student):
     cats = ["Vocal Confidence", "Processing Flow", "Linguistic Precision"]
     vals = [o["vocal_total"] + 2, o["flow_total"] + 2, o["ling_total"] + 2]
     ang = np.linspace(0, 2 * np.pi, 3, endpoint=False).tolist()
-    fig, ax = plt.subplots(figsize=(4.2, 4.2), subplot_kw=dict(polar=True))
+    fig, ax = plt.subplots(figsize=(5.5, 5.5), subplot_kw=dict(polar=True))
     ax.fill(ang + ang[:1], vals + vals[:1], color="#1f77b4", alpha=0.4)
     ax.plot(ang + ang[:1], vals + vals[:1], color="#1f77b4", linewidth=2.5)
     ax.set_theta_offset(np.pi / 2)
@@ -122,6 +122,8 @@ with tab_over:
 
     st.subheader("3D view: Vocal, Flow and Linguistic")
     fig3 = px.scatter_3d(df, x="Vocal", y="Flow", z="Linguistic", hover_name="Student")
+    fig3.update_traces(marker=dict(size=7))
+    fig3.update_layout(height=700, margin=dict(l=0, r=0, t=10, b=0), scene=dict(aspectmode="cube"))
     st.plotly_chart(fig3, use_container_width=True)
     st.caption("Each dot is one learner. Scores only, no grouping.")
 
