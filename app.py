@@ -164,6 +164,19 @@ with tab_one:
                 st.markdown(f"{group}: *{o[lab]}*")
                 st.write(", ".join(f"{k} {v}" for k, v in o[key].items()))
 
+        st.markdown("**3D view: where this learner sits among all learners**")
+        df3 = overview_df()
+        df3["Group"] = np.where(df3["Student"] == student, "Selected learner", "Other learners")
+        df3["Size"] = np.where(df3["Student"] == student, 12, 5)
+        fig3d = px.scatter_3d(
+            df3, x="Vocal", y="Flow", z="Linguistic", color="Group", size="Size", size_max=14,
+            hover_name="Student",
+            color_discrete_map={"Selected learner": "#e74c3c", "Other learners": "#b0b0b0"},
+        )
+        fig3d.update_layout(height=650, margin=dict(l=0, r=0, t=10, b=0), scene=dict(aspectmode="cube"))
+        st.plotly_chart(fig3d, use_container_width=True)
+        st.caption("Scores only. The selected learner is highlighted; no grouping or labels are applied.")
+
     with t_text:
         t = TEXT.get(student)
         if not t:
