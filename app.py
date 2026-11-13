@@ -54,9 +54,11 @@ def radar(student):
     ax.set_theta_direction(-1)
     ax.set_xticks(ang)
     ax.set_xticklabels(cats, fontsize=9, fontweight="bold")
-    ax.set_yticklabels([])
     ax.set_ylim(0, 8)
-    ax.grid(True, color="grey", linestyle="--", alpha=0.5)
+    ax.set_yticks(range(1, 9))
+    ax.set_yticklabels([])
+    ax.grid(True, color="grey", linestyle="--", alpha=0.4)
+    ax.set_title(f"Neural profile: {student}", fontsize=11, fontweight="bold", pad=22)
     plt.tight_layout()
     return fig
 
