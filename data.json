@@ -1,0 +1,1566 @@
+{
+ "obs": {
+  "Student 1": {
+   "vocal_total": 4,
+   "flow_total": 2,
+   "ling_total": 2,
+   "vocal_label": "Active Receptive",
+   "flow_label": "High Flow / Leader",
+   "ling_label": "Articulate/Clear",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 0,
+    "Hesitation": 2,
+    "Energy shift": 0
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 2,
+    "Mentor connection": 2,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 2,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 2": {
+   "vocal_total": 0,
+   "flow_total": 0,
+   "ling_total": -1.3,
+   "vocal_label": "passive Reseptive",
+   "flow_label": "Passive/Neutral",
+   "ling_label": "Incoherent/Struggling",
+   "vocal_detail": {
+    "Tone": 0,
+    "Response latency": 0,
+    "Hesitation": 0,
+    "Energy shift": 0
+   },
+   "flow_detail": {
+    "Social mirroring": 0,
+    "Engagement": 0,
+    "Mentor connection": 0,
+    "Response": 0
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": -2,
+    "Clarity": -2
+   }
+  },
+  "Student 3": {
+   "vocal_total": -5,
+   "flow_total": 0.4,
+   "ling_total": -1.3,
+   "vocal_label": "Fragmented",
+   "flow_label": "Passive/Neutral",
+   "ling_label": "Incoherent/Struggling",
+   "vocal_detail": {
+    "Tone": -2,
+    "Response latency": 0,
+    "Hesitation": -2,
+    "Energy shift": -1
+   },
+   "flow_detail": {
+    "Social mirroring": 0,
+    "Engagement": 0,
+    "Mentor connection": 0,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": -2,
+    "Clarity": -2
+   }
+  },
+  "Student 4": {
+   "vocal_total": -2,
+   "flow_total": 0.8,
+   "ling_total": 1.3,
+   "vocal_label": "Anxious",
+   "flow_label": "Steady Flow",
+   "ling_label": "Functional/Steady",
+   "vocal_detail": {
+    "Tone": 0,
+    "Response latency": 0,
+    "Hesitation": -2,
+    "Energy shift": 0
+   },
+   "flow_detail": {
+    "Social mirroring": 0,
+    "Engagement": 0,
+    "Mentor connection": 2,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 5": {
+   "vocal_total": 6,
+   "flow_total": 2,
+   "ling_total": 2,
+   "vocal_label": "Highly Engaged",
+   "flow_label": "High Flow / Leader",
+   "ling_label": "Articulate/Clear",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 0,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 2,
+    "Mentor connection": 2,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 2,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 6": {
+   "vocal_total": 8,
+   "flow_total": 2,
+   "ling_total": 2,
+   "vocal_label": "Highly Engaged",
+   "flow_label": "High Flow / Leader",
+   "ling_label": "Articulate/Clear",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 2,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 2,
+    "Mentor connection": 2,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 2,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 7": {
+   "vocal_total": -6,
+   "flow_total": -1.8,
+   "ling_total": -0.7,
+   "vocal_label": "Fragmented",
+   "flow_label": "Low Flow / Struggling",
+   "ling_label": "Incoherent/Struggling",
+   "vocal_detail": {
+    "Tone": -2,
+    "Response latency": -2,
+    "Hesitation": -2,
+    "Energy shift": 0
+   },
+   "flow_detail": {
+    "Social mirroring": -2,
+    "Engagement": -1,
+    "Mentor connection": -2,
+    "Response": -2
+   },
+   "ling_detail": {
+    "Vocabulary": 2,
+    "Sentence structure": -2,
+    "Clarity": -2
+   }
+  },
+  "Student 8": {
+   "vocal_total": 0,
+   "flow_total": -1.8,
+   "ling_total": -1.3,
+   "vocal_label": "passive Reseptive",
+   "flow_label": "Low Flow / Struggling",
+   "ling_label": "Incoherent/Struggling",
+   "vocal_detail": {
+    "Tone": 0,
+    "Response latency": 0,
+    "Hesitation": 0,
+    "Energy shift": 0
+   },
+   "flow_detail": {
+    "Social mirroring": -2,
+    "Engagement": -1,
+    "Mentor connection": -2,
+    "Response": -2
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": -2,
+    "Clarity": -2
+   }
+  },
+  "Student 9": {
+   "vocal_total": 8,
+   "flow_total": 0.8,
+   "ling_total": 2,
+   "vocal_label": "Highly Engaged",
+   "flow_label": "Steady Flow",
+   "ling_label": "Articulate/Clear",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 2,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 0,
+    "Mentor connection": 2,
+    "Response": 0
+   },
+   "ling_detail": {
+    "Vocabulary": 2,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 10": {
+   "vocal_total": 6,
+   "flow_total": 1.2,
+   "ling_total": 1.3,
+   "vocal_label": "Active Receptive",
+   "flow_label": "Steady Flow",
+   "ling_label": "Functional/Steady",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 0,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 0,
+    "Mentor connection": 2,
+    "Response": 0
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 11": {
+   "vocal_total": 4,
+   "flow_total": 0,
+   "ling_total": -0.7,
+   "vocal_label": "Active Receptive",
+   "flow_label": "Passive/Neutral",
+   "ling_label": "Incoherent/Struggling",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 0,
+    "Hesitation": 0,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 0,
+    "Engagement": 0,
+    "Mentor connection": 0,
+    "Response": 0
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": 0,
+    "Clarity": -2
+   }
+  },
+  "Student 12": {
+   "vocal_total": 8,
+   "flow_total": 2,
+   "ling_total": 1.3,
+   "vocal_label": "Highly Engaged",
+   "flow_label": "High Flow / Leader",
+   "ling_label": "Functional/Steady",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 2,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 2,
+    "Mentor connection": 2,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 13": {
+   "vocal_total": 4,
+   "flow_total": 0.4,
+   "ling_total": 1.3,
+   "vocal_label": "Active Receptive",
+   "flow_label": "Passive/Neutral",
+   "ling_label": "Functional/Steady",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 0,
+    "Hesitation": 2,
+    "Energy shift": 0
+   },
+   "flow_detail": {
+    "Social mirroring": 0,
+    "Engagement": 2,
+    "Mentor connection": 0,
+    "Response": 0
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 14": {
+   "vocal_total": 8,
+   "flow_total": 2,
+   "ling_total": 1.3,
+   "vocal_label": "Highly Engaged",
+   "flow_label": "High Flow / Leader",
+   "ling_label": "Functional/Steady",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 2,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 2,
+    "Mentor connection": 2,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 16": {
+   "vocal_total": 8,
+   "flow_total": 1.6,
+   "ling_total": 2,
+   "vocal_label": "Highly Engaged",
+   "flow_label": "High Flow / Leader",
+   "ling_label": "Articulate/Clear",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 2,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 2,
+    "Mentor connection": 2,
+    "Response": 0
+   },
+   "ling_detail": {
+    "Vocabulary": 2,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 17": {
+   "vocal_total": 8,
+   "flow_total": 2,
+   "ling_total": 2,
+   "vocal_label": "Highly Engaged",
+   "flow_label": "High Flow / Leader",
+   "ling_label": "Articulate/Clear",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 2,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 2,
+    "Mentor connection": 2,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 2,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  },
+  "Student 15": {
+   "vocal_total": 4,
+   "flow_total": 0.4,
+   "ling_total": 0,
+   "vocal_label": "Active Receptive",
+   "flow_label": "Passive/Neutral",
+   "ling_label": "Simple/Neutral",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 0,
+    "Energy shift": 0
+   },
+   "flow_detail": {
+    "Social mirroring": 0,
+    "Engagement": 0,
+    "Mentor connection": 2,
+    "Response": 0
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": 2,
+    "Clarity": -2
+   }
+  },
+  "Student 18": {
+   "vocal_total": 2,
+   "flow_total": 0.4,
+   "ling_total": 0,
+   "vocal_label": "Active Receptive",
+   "flow_label": "Passive/Neutral",
+   "ling_label": "Simple/Neutral",
+   "vocal_detail": {
+    "Tone": 0,
+    "Response latency": 0,
+    "Hesitation": 0,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 0,
+    "Engagement": 0,
+    "Mentor connection": 2,
+    "Response": 0
+   },
+   "ling_detail": {
+    "Vocabulary": 0,
+    "Sentence structure": 2,
+    "Clarity": -2
+   }
+  },
+  "Student 19": {
+   "vocal_total": 8,
+   "flow_total": 2,
+   "ling_total": 2,
+   "vocal_label": "Highly Engaged",
+   "flow_label": "High Flow / Leader",
+   "ling_label": "Articulate/Clear",
+   "vocal_detail": {
+    "Tone": 2,
+    "Response latency": 2,
+    "Hesitation": 2,
+    "Energy shift": 2
+   },
+   "flow_detail": {
+    "Social mirroring": 2,
+    "Engagement": 2,
+    "Mentor connection": 2,
+    "Response": 2
+   },
+   "ling_detail": {
+    "Vocabulary": 2,
+    "Sentence structure": 2,
+    "Clarity": 2
+   }
+  }
+ },
+ "cards": {
+  "Student 1": {
+   "education": "B.Com (2015)",
+   "org_feedback": "The learner says the program offers excellent hope for non‑tech business professionals seeking a pivot.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Transition to AI and Data Science for sustainable financial stability"
+    ],
+    "💼 Current Status & Background": [
+     "Running a steel/iron business facing market and GST uncertainty",
+     "B.Com graduate",
+     "Lacks foundational technical skills"
+    ],
+    "📊 Key Insights for Organization": [
+     "Highly motivated to change career",
+     "Business experience provides real‑world perspective",
+     "Shows strong commitment to upskilling",
+     "Potential to act as a success case for non‑tech pivots"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Needs 8th‑10th grade mathematics foundation",
+     "Requires basic programming structure training",
+     "Benefits from flexible, well‑paced learning schedule"
+    ]
+   }
+  },
+  "Student 2": {
+   "education": "Science (Non-Medical)",
+   "org_feedback": "The learner reports connection with the Growth & Expansion Unit to embed AI frameworks into school curricula.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Deep dive into Machine Learning and AI to create societal tech solutions",
+     "Translate textbook theory into practical technical development and hardware integration"
+    ],
+    "💼 Current Status & Background": [
+     "Science Teacher at a private school, teaching up to 10th standard",
+     "Science background (non‑medical)"
+    ],
+    "📊 Key Insights for Organization": [
+     "Demonstrates strong commitment to applying AI in education",
+     "Possesses teaching expertise that can pilot AI curricula",
+     "Proactively engaged with Growth & Expansion Unit",
+     "Motivated to bridge theory and hardware implementation"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Needs structured guidance linking hardware/electronics circuits with AI software models",
+     "Requires mentor support to launch micro‑project deployments in his school"
+    ]
+   }
+  },
+  "Student 3": {
+   "education": "11th‑12th Standard, Non‑Medical Science",
+   "org_feedback": "Mentors advised strict adherence to a continuous learning pathway and structured behavioral grooming.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Become an AI Engineer",
+     "Contribute to Data Science projects"
+    ],
+    "💼 Current Status & Background": [
+     "Student",
+     "Completed 11th/12th Standard in Non‑Medical Science",
+     "Basic Python knowledge"
+    ],
+    "📊 Key Insights for Organization": [
+     "Demonstrates foundational Python skills",
+     "Shows strong aspiration toward AI and data science",
+     "Responsive to mentor guidance on structured learning",
+     "Potential for high engagement if confidence barriers are addressed"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Overcome deep shyness and activate camera during live sessions",
+     "Maintain session continuity and avoid skipping sequential modules",
+     "Improve confidence in applying Python concepts",
+     "Require closer progress tracking"
+    ]
+   }
+  },
+  "Student 4": {
+   "education": "9th Standard Student",
+   "org_feedback": "The learner described the program as terrific.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Pursue data science",
+     "Pursue analytics",
+     "Engage in AI research",
+     "Participate in hackathons and internships"
+    ],
+    "💼 Current Status & Background": [
+     "Student (9th standard) at a school",
+     "Strong logical and mathematical abilities",
+     "Skilled at chess and structural problem solving"
+    ],
+    "📊 Key Insights for Organization": [
+     "Demonstrates strong logical and quantitative reasoning",
+     "Highly motivated by hackathons and internship opportunities",
+     "Shows early potential for tech internships",
+     "Expresses positive enthusiasm for the program"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Public speaking shyness",
+     "Prefers text communication over speaking",
+     "Poor time management",
+     "Needs soft‑skills training"
+    ]
+   }
+  },
+  "Student 5": {
+   "education": "B.Tech Electronics & Communication (2nd Semester)",
+   "org_feedback": "He actively uses the program curriculum to supplement his university engineering studies.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Become a technology inventor focusing on AI and advanced Data Science applications"
+    ],
+    "💼 Current Status & Background": [
+     "Student pursuing B.Tech Electronics & Communication (2nd semester)",
+     "Strong foundation in Python and databases",
+     "Technical readiness praised",
+     "Learning Arabic and quantum concepts"
+    ],
+    "📊 Key Insights for Organization": [
+     "Strong Python/database foundation",
+     "Applies curriculum directly to degree coursework",
+     "Demonstrates high technical readiness",
+     "Shows motivation by multitasking advanced topics"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Needs to reduce conversational hesitation for vivas, presentations, and technical interviews",
+     "Develop clearer spoken communication skills"
+    ]
+   }
+  },
+  "Student 6": {
+   "education": "Undergraduate 2nd Year Zoology, Computer Diploma",
+   "org_feedback": "The learner reported mentors suggested exploring domain‑specific AI tools for zoology.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Become a zoology teacher",
+     "Integrate AI models into zoology education"
+    ],
+    "💼 Current Status & Background": [
+     "Student (2nd year Zoology)",
+     "Part‑time home tutor",
+     "Skilled in stenography and typing",
+     "No core programming background"
+    ],
+    "📊 Key Insights for Organization": [
+     "Practical side‑skills in stenography and typing",
+     "Strong motivation to apply AI in biology",
+     "Proactively seeks domain‑specific AI resources",
+     "Willing to engage via recorded sessions"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Lacks foundational programming knowledge",
+     "Highly congested daily schedule limits live interaction",
+     "Timing clashes require reliance on recorded lectures",
+     "Needs dedicated asynchronous doubt‑clearing support"
+    ]
+   }
+  },
+  "Student 7": {
+   "education": "7th Standard Student",
+   "org_feedback": "The learner noted that the organization is planning a customized, friendly psychological intervention to ensure he does not feel left behind.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Futuristic technology",
+     "Foundational coding",
+     "Website development",
+     "Visual arts"
+    ],
+    "💼 Current Status & Background": [
+     "Student (7th standard)",
+     "Creative with strong arts/painting background"
+    ],
+    "📊 Key Insights for Organization": [
+     "Highly creative with strong arts background",
+     "Shows keen interest in futuristic tech and coding",
+     "Motivated to develop website and visual arts skills",
+     "Potential for high engagement with personalized support"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Limited attention span due to young age",
+     "Hesitation to communicate or ask questions in larger groups",
+     "Needs balanced screen time with outdoor activities for socialization"
+    ]
+   }
+  },
+  "Student 8": {
+   "education": "7th Standard Student",
+   "org_feedback": "The learner requests psychological comfort sessions to encourage mic unmuting and peer interaction.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Train custom AI models",
+     "Develop knowledge in financial markets and stock trading"
+    ],
+    "💼 Current Status & Background": [
+     "Student in 7th standard",
+     "Passive during discussions",
+     "Limited mathematical abstraction skills"
+    ],
+    "📊 Key Insights for Organization": [
+     "Demonstrates early interest in AI and finance",
+     "Shows willingness to engage with targeted support",
+     "Potential to benefit from peer micro‑groups",
+     "Highly motivated despite current passivity"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Difficulty with abstract algebra concepts",
+     "Needs visual math explanations",
+     "Requires psychological comfort to speak up",
+     "Benefits from structured peer micro‑group interactions"
+    ]
+   }
+  },
+  "Student 9": {
+   "education": "Integrated MBA",
+   "org_feedback": "The learner noted that the organization aligned her with domain experts, providing a clear corporate pathway.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Specialize in AI-driven modern marketing frameworks and data analytics."
+    ],
+    "💼 Current Status & Background": [
+     "Management student",
+     "Strong business concept knowledge",
+     "Science school background"
+    ],
+    "📊 Key Insights for Organization": [
+     "Demonstrates strong grasp of business concepts",
+     "Shows commitment to advancing AI-driven marketing skills",
+     "Engages proactively with domain experts",
+     "Potential to contribute strategic insights in marketing analytics"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Overcome coding anxiety when using intensive tools",
+     "Manage mental fatigue during technical onboarding",
+     "Require step-by-step modular training for new tools"
+    ]
+   }
+  },
+  "Student 10": {
+   "education": "BCA (Distance) student, former medical aspirant",
+   "org_feedback": "The learner reported that mentors advised shifting to a regular on‑campus university for post‑graduation to address behavioral and networking gaps.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Excel in machine‑learning deployment",
+     "Train custom machine‑learning models",
+     "Pursue a regular master’s degree"
+    ],
+    "💼 Current Status & Background": [
+     "Student pursuing BCA via distance mode, previously aimed for medical stream",
+     "Limited classroom exposure, seeking practical experience"
+    ],
+    "📊 Key Insights for Organization": [
+     "Highly motivated to master advanced machine‑learning techniques",
+     "Responsive to mentor guidance and willing to adapt",
+     "Proactively enrolled in the upcoming DAP data‑analytics cycle",
+     "Diverse academic background may enrich peer discussions"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Needs foundational mathematics for advanced machine learning",
+     "Requires professional behavioral polishing",
+     "Would benefit from on‑campus peer networking opportunities",
+     "Needs a bridging module in statistical mathematics"
+    ]
+   }
+  },
+  "Student 11": {
+   "education": "",
+   "org_feedback": "",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Technical career in AI"
+    ],
+    "📊 Key Insights for Organization": [
+     "Demonstrates interest in AI technical roles",
+     "Shows low engagement during evaluations",
+     "Requires proactive outreach to maintain participation",
+     "Responsive to explicit instructions"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Activate camera during attendance",
+     "Use Discord actively for communication",
+     "Increase participation in evaluation sessions",
+     "Engage proactively with support team"
+    ]
+   }
+  },
+  "Student 12": {
+   "education": "Strong Mathematics and Core Analytics background",
+   "org_feedback": "The learner expressed deep gratitude for the organization’s post‑course handholding and career placement framework.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Strategic career pivot into advanced Data Analytics and corporate automation engineering"
+    ],
+    "💼 Current Status & Background": [
+     "Human Resources professional in corporate management operations with strong mathematics and core analytics background"
+    ],
+    "📊 Key Insights for Organization": [
+     "Mature corporate profile demonstrates reliability",
+     "Highly values automation tools, indicating strong engagement",
+     "Appreciates hands‑on support, suggesting commitment to program",
+     "Seen as high‑potential for fast‑tracked enterprise roles"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Needs to adapt corporate workflows into automated Python/Data‑science frameworks seamlessly"
+    ]
+   }
+  },
+  "Student 13": {
+   "education": "Medical aspirant track",
+   "org_feedback": "The learner appreciates the basic course setup for eliminating tech phobia and bridging initial technology gaps.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Balance medical analytics domain tracking with foundational AI literacy."
+    ],
+    "💼 Current Status & Background": [
+     "Student with medical aspirant background; seeking AI literacy."
+    ],
+    "📊 Key Insights for Organization": [
+     "Strong commitment to bridging technology gaps",
+     "Engaged in foundational AI learning",
+     "Potential to apply AI in medical analytics",
+     "Values structured scheduling support"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Develop time-management to balance exam preparation and tech learning",
+     "Require structured scheduling guidance",
+     "Improve integration of tech skills with exam timeline"
+    ]
+   }
+  },
+  "Student 14": {
+   "education": "Tech Enthusiast/Learner Track",
+   "org_feedback": "The learner expressed extreme satisfaction with instructional delivery and said, “I love this,” during mentorship sessions.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Bridge into active Data Science tracks",
+     "Engage in student community initiatives"
+    ],
+    "💼 Current Status & Background": [
+     "Student",
+     "Career tracker",
+     "Tech enthusiast"
+    ],
+    "📊 Key Insights for Organization": [
+     "Highly interactive and community‑minded",
+     "Values peer‑to‑peer structural networks",
+     "Shows strong commitment to the program",
+     "Potential to lead student engagement activities"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Needs a structured data engineering roadmap",
+     "Support transitioning from basic user to professional coder"
+    ]
+   }
+  },
+  "Student 15": {
+   "education": "",
+   "org_feedback": "The learner indicated that an automated alert or personal check‑in from learner support would help assess program satisfaction.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Upskill in basic machine learning deployment frameworks"
+    ],
+    "📊 Key Insights for Organization": [
+     "Shows interest in acquiring machine‑learning deployment skills.",
+     "Current low interactive footprint suggests room for increased engagement.",
+     "Open to automated support, indicating responsiveness to structured communication.",
+     "Potential to benefit from milestone tracking tools for progress visibility."
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Increase structural feedback engagement and submission ratios.",
+     "Enhance interactive participation during program activities.",
+     "Map learner to primary batch dashboard for milestone tracking."
+    ]
+   }
+  },
+  "Student 16": {
+   "education": "Foundational student track",
+   "org_feedback": "The learner noted that onboarding verification on Discord is required to clear initial system communication blocks.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Analytical logic tracks",
+     "Early technical certification programs"
+    ],
+    "💼 Current Status & Background": [
+     "Student",
+     "Enrolled in core tech tracking",
+     "Foundational student track"
+    ],
+    "📊 Key Insights for Organization": [
+     "Demonstrates strong commitment to technical skill development",
+     "Identifies onboarding gaps, indicating attention to process improvement",
+     "Willing to schedule 1‑on‑1 mentor sessions",
+     "Engaged in tracking verification procedures"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Needs to proactively schedule 1‑on‑1 slots with technical mentors",
+     "Requires Discord onboarding verification to remove communication blocks",
+     "Missed deep personal evaluation interactions on transcript date"
+    ]
+   }
+  },
+  "Student 17": {
+   "education": "Advanced educational tracking domain",
+   "org_feedback": "The learner noted that they were advised to transition into advanced Python scripting tracks and maintain immediate offline communication loops.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Build a highly competitive corporate portfolio through structured project work",
+     "Secure an early internship placement"
+    ],
+    "💼 Current Status & Background": [
+     "Student",
+     "Potential intern candidate",
+     "Background in advanced educational tracking domain",
+     "Excellent baseline capacity for analytics"
+    ],
+    "📊 Key Insights for Organization": [
+     "Excellent baseline analytics capacity",
+     "Highly responsive to mentorship advice",
+     "Strong potential for corporate project contributions",
+     "Motivated to develop a competitive portfolio"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Inconsistent live meeting attendance",
+     "Low camera utilization during sessions",
+     "Needs firm deadlines to maximize project output"
+    ]
+   }
+  },
+  "Student 18": {
+   "education": "Technical/Applied Sciences Track",
+   "org_feedback": "The learner is extremely satisfied with personalized curriculum access and is committed to resolving platform blocks with IT support.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Implement analytical pipelines in modern MLOps"
+    ],
+    "💼 Current Status & Background": [
+     "Student",
+     "Early‑career professional",
+     "Technical/Applied Sciences background"
+    ],
+    "📊 Key Insights for Organization": [
+     "Highly motivated to build real‑world project portfolios under mentorship",
+     "Shows strong satisfaction with personalized curriculum",
+     "Demonstrates commitment to solving platform issues",
+     "Willing to increase verbal participation in live sessions"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Needs clear, documented steps for platform configuration",
+     "Faces regional network onboarding barriers",
+     "Requires support to navigate onboarding processes"
+    ]
+   }
+  },
+  "Student 19": {
+   "education": "Pharmaceutical / Applied Sciences Track",
+   "org_feedback": "The learner finds the program aligned with advanced analytical modules but needs cross‑domain research literature from the organization.",
+   "sections": {
+    "🎯 Goals & Aspirations": [
+     "Merge advanced machine learning frameworks with pharmaceutical innovation and drug discovery systems"
+    ],
+    "💼 Current Status & Background": [
+     "Student",
+     "Emerging entrepreneur",
+     "Background in pharmaceutical and applied sciences"
+    ],
+    "📊 Key Insights for Organization": [
+     "Innovative visionary mindset",
+     "Focus on long-term societal and medical impact of AI",
+     "Alignment with advanced analytical modules",
+     "Demonstrates commitment despite onboarding challenges"
+    ],
+    "🛠️ Improvement Areas & Support Needed": [
+     "Managing scheduling conflicts between academic workload and mentorship hours",
+     "Access to cross-domain research literature",
+     "Resolution of onboarding issues with technical platforms"
+    ]
+   }
+  }
+ },
+ "text": {
+  "Student 1": {
+   "session": "FAI Mentorship Session 1",
+   "high_conf": [
+    "definitely",
+    "will",
+    "exploring",
+    "sustainable",
+    "future",
+    "financial stability",
+    "i wanted"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "circumstances",
+    "not sure"
+   ],
+   "confidence": 7.8,
+   "hesitation_words": 1,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.98,
+   "pos": 22,
+   "neg": 2,
+   "neu": 76,
+   "high": 7,
+   "low": 2
+  },
+  "Student 2": {
+   "session": "FAI Mentorship Session 1",
+   "high_conf": [
+    "definitely",
+    "agree",
+    "possible",
+    "yes",
+    "machine learning",
+    "21st century",
+    "innovation"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "actually",
+    "like",
+    "for example"
+   ],
+   "confidence": 6.2,
+   "hesitation_words": 6,
+   "cognitive_load": "High",
+   "sentiment": "Positive",
+   "compound": 0.97,
+   "pos": 23,
+   "neg": 0,
+   "neu": 77,
+   "high": 5,
+   "low": 3
+  },
+  "Student 3": {
+   "session": "FAI Mentorship Session 2",
+   "high_conf": [
+    "contribute",
+    "data science",
+    "python",
+    "hard work",
+    "yes",
+    "good"
+   ],
+   "low_conf": [
+    "shy",
+    "maybe",
+    "uh",
+    "umm",
+    "not sure",
+    "difficult"
+   ],
+   "confidence": 7.5,
+   "hesitation_words": 0,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.97,
+   "pos": 50,
+   "neg": 12,
+   "neu": 38,
+   "high": 6,
+   "low": 2
+  },
+  "Student 4": {
+   "session": "FAI Mentorship Session 2",
+   "high_conf": [
+    "contribute",
+    "data science",
+    "machine learning",
+    "coding",
+    "excited",
+    "yes",
+    "will continue"
+   ],
+   "low_conf": [
+    "shyness",
+    "weakness",
+    "maybe",
+    "uh",
+    "umm",
+    "public speaking"
+   ],
+   "confidence": 7.0,
+   "hesitation_words": 0,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.98,
+   "pos": 46,
+   "neg": 10,
+   "neu": 44,
+   "high": 7,
+   "low": 3
+  },
+  "Student 5": {
+   "session": "FAI Mentorship Session 3",
+   "high_conf": [
+    "definitely",
+    "interested",
+    "AI",
+    "data science",
+    "python",
+    "energy",
+    "invent",
+    "useful",
+    "absolutely"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "hesitant",
+    "shy"
+   ],
+   "confidence": 10.0,
+   "hesitation_words": 0,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.97,
+   "pos": 24,
+   "neg": 4,
+   "neu": 72,
+   "high": 9,
+   "low": 0
+  },
+  "Student 6": {
+   "session": "FAI Mentorship Session 3",
+   "high_conf": [
+    "definitely",
+    "will",
+    "contribute",
+    "research",
+    "fascinating",
+    "participate",
+    "add",
+    "helpful"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "not sure",
+    "tough"
+   ],
+   "confidence": 10.0,
+   "hesitation_words": 1,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.98,
+   "pos": 22,
+   "neg": 2,
+   "neu": 76,
+   "high": 5,
+   "low": 0
+  },
+  "Student 7": {
+   "session": "FAI Mentorship Session 4",
+   "high_conf": [
+    "definitely",
+    "will",
+    "contribute",
+    "research",
+    "interested",
+    "AI",
+    "data science",
+    "energy",
+    "invent",
+    "excited",
+    "make",
+    "learn"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "shy",
+    "weakness",
+    "tough"
+   ],
+   "confidence": 10.0,
+   "hesitation_words": 1,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.55,
+   "pos": 20,
+   "neg": 9,
+   "neu": 71,
+   "high": 3,
+   "low": 0
+  },
+  "Student 9": {
+   "session": "FAI Mentorship Session 5",
+   "high_conf": [
+    "definitely",
+    "will",
+    "contribute",
+    "research",
+    "interested",
+    "AI",
+    "energy",
+    "invent",
+    "make",
+    "learn",
+    "achieve",
+    "marketing",
+    "best"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "shy",
+    "weakness",
+    "tough"
+   ],
+   "confidence": 7.5,
+   "hesitation_words": 2,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.99,
+   "pos": 34,
+   "neg": 0,
+   "neu": 66,
+   "high": 3,
+   "low": 1
+  },
+  "Student 10": {
+   "session": "FAI Mentorship Session 5",
+   "high_conf": [
+    "definitely",
+    "will",
+    "contribute",
+    "research",
+    "interested",
+    "AI",
+    "energy",
+    "invent",
+    "make",
+    "learn",
+    "create",
+    "models",
+    "train",
+    "energetic",
+    "Python"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "shy",
+    "weakness",
+    "tough"
+   ],
+   "confidence": 10.0,
+   "hesitation_words": 0,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.97,
+   "pos": 24,
+   "neg": 0,
+   "neu": 76,
+   "high": 7,
+   "low": 0
+  },
+  "Student 11": {
+   "session": "FAI Mentorship Session 6",
+   "high_conf": [
+    "definitely",
+    "will",
+    "contribute",
+    "research",
+    "interested",
+    "AI",
+    "energy",
+    "invent",
+    "make",
+    "learn",
+    "web",
+    "designing",
+    "app",
+    "technology",
+    "continue"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "shy",
+    "weakness",
+    "tough"
+   ],
+   "confidence": 8.8,
+   "hesitation_words": 1,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.83,
+   "pos": 24,
+   "neg": 6,
+   "neu": 70,
+   "high": 7,
+   "low": 1
+  },
+  "Student 12": {
+   "session": "FAI Mentorship Session 6",
+   "high_conf": [
+    "definitely",
+    "will",
+    "contribute",
+    "research",
+    "interested",
+    "AI",
+    "energy",
+    "invent",
+    "make",
+    "learn",
+    "achieve",
+    "explore",
+    "productive",
+    "motivate",
+    "adapt",
+    "grow",
+    "prioritize"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "shy",
+    "weakness",
+    "tough"
+   ],
+   "confidence": 10.0,
+   "hesitation_words": 1,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.99,
+   "pos": 34,
+   "neg": 2,
+   "neu": 64,
+   "high": 12,
+   "low": 0
+  },
+  "Student 13": {
+   "session": "FAI Mentorship Session 7",
+   "high_conf": [
+    "definitely",
+    "will",
+    "contribute",
+    "research",
+    "interested",
+    "AI",
+    "energy",
+    "invent",
+    "make",
+    "learn",
+    "keen",
+    "energetic",
+    "best",
+    "skills",
+    "DAP"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "shy",
+    "weakness",
+    "tough"
+   ],
+   "confidence": 10.0,
+   "hesitation_words": 2,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.99,
+   "pos": 29,
+   "neg": 0,
+   "neu": 71,
+   "high": 10,
+   "low": 0
+  },
+  "Student 14": {
+   "session": "FAI Mentorship Session 7",
+   "high_conf": [
+    "definitely",
+    "will",
+    "contribute",
+    "research",
+    "interested",
+    "AI",
+    "energy",
+    "invent",
+    "make",
+    "learn",
+    "explore",
+    "energetic",
+    "best",
+    "Python",
+    "data",
+    "analytics",
+    "achievement",
+    "curious",
+    "100"
+   ],
+   "low_conf": [
+    "maybe",
+    "uh",
+    "umm",
+    "sorry",
+    "shy",
+    "weakness",
+    "tough"
+   ],
+   "confidence": 10.0,
+   "hesitation_words": 1,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.98,
+   "pos": 20,
+   "neg": 2,
+   "neu": 78,
+   "high": 12,
+   "low": 0
+  },
+  "Student 15": {
+   "session": "YIF Mentorship Session",
+   "high_conf": [
+    "yes",
+    "sure",
+    "try my best",
+    "good",
+    "okay",
+    "correct"
+   ],
+   "low_conf": [
+    "sorry",
+    "not able",
+    "problem",
+    "disturb",
+    "busy",
+    "inconvenience"
+   ],
+   "confidence": 5.0,
+   "hesitation_words": 2,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.99,
+   "pos": 19,
+   "neg": 8,
+   "neu": 73,
+   "high": 6,
+   "low": 6
+  },
+  "Student 16": {
+   "session": "FAI Mentorship Session",
+   "high_conf": [
+    "yes",
+    "interesting",
+    "contribute",
+    "definitely",
+    "energizes",
+    "sure",
+    "okay"
+   ],
+   "low_conf": [
+    "sorry",
+    "uh",
+    "umm",
+    "shy",
+    "comfortable",
+    "not sure"
+   ],
+   "confidence": 7.1,
+   "hesitation_words": 1,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.98,
+   "pos": 40,
+   "neg": 4,
+   "neu": 56,
+   "high": 5,
+   "low": 2
+  },
+  "Student 17": {
+   "session": "FAI Mentorship Session",
+   "high_conf": [
+    "yes",
+    "definitely",
+    "contribute",
+    "energetic",
+    "exactly",
+    "sure",
+    "try"
+   ],
+   "low_conf": [
+    "sorry",
+    "uh",
+    "umm",
+    "shy",
+    "introvert",
+    "not comfortable",
+    "not sure"
+   ],
+   "confidence": 6.4,
+   "hesitation_words": 5,
+   "cognitive_load": "Moderate",
+   "sentiment": "Positive",
+   "compound": 1.0,
+   "pos": 26,
+   "neg": 5,
+   "neu": 69,
+   "high": 7,
+   "low": 4
+  },
+  "Student 18": {
+   "session": "FAI Mentorship Session",
+   "high_conf": [
+    "yes",
+    "okay",
+    "definitely",
+    "energetic",
+    "problem solver",
+    "build career",
+    "inshallah"
+   ],
+   "low_conf": [
+    "sorry",
+    "uh",
+    "umm",
+    "not sure",
+    "disconnect",
+    "maybe"
+   ],
+   "confidence": 6.7,
+   "hesitation_words": 3,
+   "cognitive_load": "Moderate",
+   "sentiment": "Positive",
+   "compound": 0.97,
+   "pos": 27,
+   "neg": 4,
+   "neu": 69,
+   "high": 4,
+   "low": 2
+  },
+  "Student 19": {
+   "session": "FAI Mentorship Session",
+   "high_conf": [
+    "yes",
+    "definitely",
+    "thank you",
+    "excite",
+    "new discovery",
+    "contribute",
+    "100%"
+   ],
+   "low_conf": [
+    "sorry",
+    "uh",
+    "umm",
+    "difficult",
+    "not sure",
+    "problem"
+   ],
+   "confidence": 8.6,
+   "hesitation_words": 2,
+   "cognitive_load": "Low",
+   "sentiment": "Positive",
+   "compound": 0.99,
+   "pos": 29,
+   "neg": 6,
+   "neu": 65,
+   "high": 6,
+   "low": 1
+  }
+ }
+}
