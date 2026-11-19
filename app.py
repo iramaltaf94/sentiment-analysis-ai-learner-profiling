@@ -92,98 +92,64 @@ def overview_df():
     return pd.DataFrame(rows)
 
 
-# ---------- crystal 3D ----------
-CRYSTAL_PALETTE = ["rgb(34,211,238)", "rgb(99,102,241)", "rgb(168,85,247)", "rgb(236,72,153)"]
-GOLD = "rgb(255,196,61)"
+# ---------- bubble 3D (clean, light, big glossy spheres) ----------
+BLUE = "rgb(37,99,235)"
+RED = "rgb(239,68,68)"
 
 
-def crystal_3d(df, selected=None, height=760):
-    """Big, glassy, faceted crystals (one per learner) on a dark glowing stage."""
+def crystal_3d(df, selected=None, height=720):
+    """Big glossy bubbles on a clean white stage (no box, no wireframe)."""
     cols = ["Vocal", "Flow", "Linguistic"]
     lo = float(df[cols].min().min())
     hi = float(df[cols].max().max())
     span = max(hi - lo, 1.0)
-    rng = [lo - span * 0.2, hi + span * 0.2]   # same range on all axes -> crystals are not stretched
-    base = span * 0.06                           # crystal size (bigger = more visible)
+    rng = [lo - span * 0.15, hi + span * 0.15]
 
     score = df[cols].mean(axis=1)
     norm = (score - score.min()) / (score.max() - score.min()) if score.max() > score.min() else score * 0 + 0.5
-    colors = px.colors.sample_colorscale(CRYSTAL_PALETTE, norm.tolist())
+    if selected is None:
+        colors = px.colors.sample_colorscale([BLUE, RED], norm.tolist())   # low = blue, high = red
+        sizes = [26] * len(df)
+    else:
+        sel = (df["Student"] == selected).tolist()
+        colors = [RED if s else "rgb(96,165,250)" for s in sel]
+        sizes = [44 if s else 24 for s in sel]
 
+    x, y, z = df["Vocal"], df["Flow"], df["Linguistic"]
     fig = go.Figure()
-    ex, ey, ez = [], [], []                      # all facet edges in one trace (fast)
-    hx, hy, hz, hcol, hsize, htext = [], [], [], [], [], []
-
-    for (_, row), col in zip(df.iterrows(), colors):
-        is_sel = selected is not None and row["Student"] == selected
-        s = base * (1.8 if is_sel else 1.0)
-        if is_sel:
-            col = GOLD
-        x, y, z = float(row["Vocal"]), float(row["Flow"]), float(row["Linguistic"])
-
-        # elongated octahedron = diamond crystal
-        vx = [x + s, x - s, x, x, x, x]
-        vy = [y, y, y + s, y - s, y, y]
-        vz = [z, z, z, z, z + 1.6 * s, z - 1.6 * s]
-        fi, fj, fk = [], [], []
-        for a in (0, 1):
-            for b in (2, 3):
-                for c in (4, 5):
-                    fi.append(a); fj.append(b); fk.append(c)
-        fig.add_trace(go.Mesh3d(
-            x=vx, y=vy, z=vz, i=fi, j=fj, k=fk,
-            color=col, opacity=0.85 if is_sel else 0.6, flatshading=True,
-            lighting=dict(ambient=0.45, diffuse=0.9, specular=1.6, roughness=0.05, fresnel=1.4),
-            lightposition=dict(x=300, y=200, z=400),
-            hoverinfo="skip", showlegend=False,
-        ))
-        for a, b in [(a, b) for a in (0, 1) for b in (2, 3)] + \
-                    [(a, c) for a in (0, 1) for c in (4, 5)] + \
-                    [(b, c) for b in (2, 3) for c in (4, 5)]:
-            ex += [vx[a], vx[b], None]; ey += [vy[a], vy[b], None]; ez += [vz[a], vz[b], None]
-
-        hx.append(x); hy.append(y); hz.append(z)
-        hcol.append(col)
-        hsize.append(46 if is_sel else 30)
-        htext.append(row["Student"])
-
-    # glowing facet edges
-    fig.add_trace(go.Scatter3d(x=ex, y=ey, z=ez, mode="lines",
-                               line=dict(color="rgba(255,255,255,0.6)", width=2),
-                               hoverinfo="skip", showlegend=False))
-    # soft glow halo (also the easy hover target)
+    # soft glow behind
     fig.add_trace(go.Scatter3d(
-        x=hx, y=hy, z=hz, mode="markers", text=htext,
-        marker=dict(size=hsize, color=hcol, opacity=0.14, line=dict(width=0)),
-        hovertemplate="<b>%{text}</b><br>Vocal: %{x}<br>Flow: %{y}<br>Linguistic: %{z}<extra></extra>",
-        showlegend=False,
-    ))
-    # bright core sparkle
-    fig.add_trace(go.Scatter3d(x=hx, y=hy, z=hz, mode="markers",
-                               marker=dict(size=4, color="white", opacity=0.95),
-                               hoverinfo="skip", showlegend=False))
+        x=x, y=y, z=z, mode="markers", hoverinfo="skip", showlegend=False,
+        marker=dict(size=[s + 12 for s in sizes], color=colors, opacity=0.18, line=dict(width=0))))
+    # main bubbles
+    fig.add_trace(go.Scatter3d(
+        x=x, y=y, z=z, mode="markers", text=df["Student"], showlegend=False,
+        marker=dict(size=sizes, color=colors, opacity=0.9, line=dict(color="white", width=1.5)),
+        hovertemplate="<b>%{text}</b><br>Vocal: %{x}<br>Flow: %{y}<br>Linguistic: %{z}<extra></extra>"))
+    # small highlight = glossy look
+    fig.add_trace(go.Scatter3d(
+        x=x, y=y, z=z, mode="markers", hoverinfo="skip", showlegend=False,
+        marker=dict(size=[max(s * 0.28, 5) for s in sizes], color="white", opacity=0.5, line=dict(width=0))))
 
     def axis(title):
-        return dict(title=dict(text=title, font=dict(color="#c7d2fe", size=14)), range=rng,
-                    showbackground=True, backgroundcolor="rgba(30,35,90,0.35)",
-                    gridcolor="rgba(160,170,255,0.22)", zerolinecolor="rgba(160,170,255,0.4)",
-                    tickfont=dict(color="#a5b4fc"))
+        return dict(title=dict(text=title, font=dict(color="#374151", size=14)), range=rng,
+                    showbackground=False, gridcolor="#e5e7eb", zerolinecolor="#d1d5db",
+                    tickfont=dict(color="#6b7280"))
 
     fig.update_layout(
         height=height, margin=dict(l=0, r=0, t=0, b=0),
-        paper_bgcolor="#0b1026",
+        paper_bgcolor="white",
         scene=dict(xaxis=axis("Vocal"), yaxis=axis("Flow"), zaxis=axis("Linguistic"),
-                   aspectmode="cube", dragmode="orbit", bgcolor="#0b1026",
-                   camera=dict(eye=dict(x=1.7, y=1.7, z=1.1))),
-        hoverlabel=dict(bgcolor="#1e1b4b", font=dict(color="white", size=14)),
+                   aspectmode="cube", dragmode="orbit", bgcolor="white",
+                   camera=dict(eye=dict(x=1.6, y=1.6, z=0.9))),
+        hoverlabel=dict(bgcolor="white", font=dict(color="#111827", size=14)),
     )
     return fig
 
 
 def show_crystal(fig):
     st.plotly_chart(fig, use_container_width=True,
-                    config={"scrollZoom": True, "displaylogo": False,
-                            "modeBarButtonsToRemove": ["resetCameraLastSave3d"]})
+                    config={"scrollZoom": True, "displaylogo": False})
 
 
 # ---------- page ----------
@@ -205,20 +171,36 @@ with tab_over:
 
     st.subheader("Confidence score per learner (/10)")
     conf = df.dropna(subset=["Confidence (/10)"])
-    fig_c, ax_c = plt.subplots(figsize=(10, 3.2))
-    ax_c.bar([int(s.split()[1]) for s in conf["Student"]], conf["Confidence (/10)"], color="#2e86de")
-    ax_c.set_xlabel("Student number")
-    ax_c.set_ylabel("Confidence (/10)")
-    ax_c.set_ylim(0, 10)
-    ax_c.set_xticks([int(s.split()[1]) for s in conf["Student"]])
-    plt.tight_layout()
-    st.pyplot(fig_c)
-    plt.close(fig_c)
+    vals = conf["Confidence (/10)"].tolist()
+    labels = [s.split()[1] for s in conf["Student"]]
+    fig_c = go.Figure()
+    # soft glow behind bars
+    fig_c.add_trace(go.Bar(x=labels, y=vals, hoverinfo="skip", showlegend=False,
+                           marker=dict(color=vals, colorscale=[[0, "rgb(37,99,235)"], [1, "rgb(239,68,68)"]],
+                                       cmin=0, cmax=10, opacity=0.18), width=0.95))
+    fig_c.add_trace(go.Bar(
+        x=labels, y=vals, width=0.62, showlegend=False,
+        text=[f"{v:.1f}" for v in vals], textposition="outside", textfont=dict(color="#374151", size=13),
+        marker=dict(color=vals, colorscale=[[0, "rgb(37,99,235)"], [1, "rgb(239,68,68)"]], cmin=0, cmax=10,
+                    opacity=0.92, line=dict(color="white", width=1.5)),
+        customdata=conf["Student"], hovertemplate="<b>%{customdata}</b><br>Confidence: %{y}/10<extra></extra>"))
+    fig_c.add_hline(y=float(np.mean(vals)), line_dash="dash", line_color="#9ca3af",
+                    annotation_text=f"average {np.mean(vals):.1f}", annotation_position="top left",
+                    annotation_font=dict(color="#6b7280"))
+    fig_c.update_layout(
+        height=420, barmode="overlay", bargap=0.2, margin=dict(l=10, r=10, t=30, b=10),
+        paper_bgcolor="white", plot_bgcolor="white",
+        xaxis=dict(title="Student number", type="category", showgrid=False, tickfont=dict(color="#374151")),
+        yaxis=dict(title="Confidence (/10)", range=[0, 11], gridcolor="#eef0f3", zeroline=False,
+                   tickfont=dict(color="#6b7280")),
+        hoverlabel=dict(bgcolor="white", font=dict(color="#111827", size=14)),
+    )
+    st.plotly_chart(fig_c, use_container_width=True, config={"displaylogo": False})
 
     st.subheader("3D view: Vocal, Flow and Linguistic")
     show_crystal(crystal_3d(df))
-    st.caption("Each crystal is one learner. Drag to rotate, scroll to zoom, hover for scores. "
-               "Colour shows the average score (cyan = lower, pink = higher). Scores only, no grouping.")
+    st.caption("Each bubble is one learner. Drag to rotate, scroll to zoom, hover for scores. "
+               "Colour shows the average score (blue = lower, red = higher). Scores only, no grouping.")
 
 with tab_one:
     student = st.selectbox("Choose a learner", STUDENTS)
@@ -259,7 +241,7 @@ with tab_one:
 
         st.markdown("**3D view: where this learner sits among all learners**")
         show_crystal(crystal_3d(overview_df(), selected=student, height=720))
-        st.caption("The golden, bigger crystal is the selected learner. Drag to rotate, scroll to zoom. "
+        st.caption("The big red bubble is the selected learner. Drag to rotate, scroll to zoom. "
                    "Scores only; no grouping or labels are applied.")
 
     with t_text:
