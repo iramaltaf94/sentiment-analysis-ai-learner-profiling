@@ -91,6 +91,19 @@ def overview_df():
     return pd.DataFrame(rows)
 
 
+def style_3d(fig, df):
+    """Keep the same plotly dots, but make the grid box clearly visible."""
+    cols = ["Vocal", "Flow", "Linguistic"]
+    lo, hi = float(df[cols].min().min()), float(df[cols].max().max())
+    pad = max(hi - lo, 1.0) * 0.12
+    ax = dict(range=[lo - pad, hi + pad], showgrid=True, gridcolor="#6b7280", gridwidth=2,
+              showbackground=True, backgroundcolor="rgba(150,160,200,0.12)",
+              showline=True, linecolor="#374151", linewidth=3, zeroline=False,
+              tickfont=dict(size=13), title=dict(font=dict(size=16)))
+    fig.update_layout(scene=dict(xaxis=ax, yaxis=ax, zaxis=ax, aspectmode="cube"))
+    return fig
+
+
 # ---------- page ----------
 st.title("Learner Analytics Dashboard")
 st.caption("Live observation (structured data) + text analysis and AI profiling (unstructured data) for 19 learners of a mentoring programme. "
@@ -122,8 +135,9 @@ with tab_over:
 
     st.subheader("3D view: Vocal, Flow and Linguistic")
     fig3 = px.scatter_3d(df, x="Vocal", y="Flow", z="Linguistic", hover_name="Student")
-    fig3.update_traces(marker=dict(size=7))
-    fig3.update_layout(height=700, margin=dict(l=0, r=0, t=10, b=0), scene=dict(aspectmode="cube"))
+    fig3.update_traces(marker=dict(size=14, line=dict(width=1, color="white")))
+    fig3.update_layout(height=750, margin=dict(l=0, r=0, t=10, b=0), scene=dict(aspectmode="cube"))
+    style_3d(fig3, df)
     st.plotly_chart(fig3, use_container_width=True)
     st.caption("Each dot is one learner. Scores only, no grouping.")
 
@@ -167,13 +181,14 @@ with tab_one:
         st.markdown("**3D view: where this learner sits among all learners**")
         df3 = overview_df()
         df3["Group"] = np.where(df3["Student"] == student, "Selected learner", "Other learners")
-        df3["Size"] = np.where(df3["Student"] == student, 12, 5)
+        df3["Size"] = np.where(df3["Student"] == student, 22, 12)
         fig3d = px.scatter_3d(
-            df3, x="Vocal", y="Flow", z="Linguistic", color="Group", size="Size", size_max=14,
+            df3, x="Vocal", y="Flow", z="Linguistic", color="Group", size="Size", size_max=26,
             hover_name="Student",
             color_discrete_map={"Selected learner": "#e74c3c", "Other learners": "#b0b0b0"},
         )
-        fig3d.update_layout(height=650, margin=dict(l=0, r=0, t=10, b=0), scene=dict(aspectmode="cube"))
+        fig3d.update_layout(height=750, margin=dict(l=0, r=0, t=10, b=0), scene=dict(aspectmode="cube"))
+        style_3d(fig3d, df3)
         st.plotly_chart(fig3d, use_container_width=True)
         st.caption("Scores only. The selected learner is highlighted; no grouping or labels are applied.")
 
