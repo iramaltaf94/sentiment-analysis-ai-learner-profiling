@@ -3,6 +3,12 @@
 
 A team project (3 members) done between April 2026 and July 2026, with the approval of Chinar Quantum AI.
 
+## Supervision and Team
+
+- **Supervisor:** Mr. Aaqib Bashir
+- **Associate Supervisor:** Mr. Muneez Usmani
+- **Team members:** Ms. Sabreena Bhat and Mr. Mohammad Kamran Sheikh
+
 ## What this project is about
 
 Learner evaluations often reduce a person to one score. We wanted to see what mentoring conversations show about a learner's confidence and hesitation that a single number cannot. We built a Python pipeline that combines two kinds of data: structured live observation scores, and unstructured session notes and transcripts. Text analysis and an LLM then turn both into readable learner profiles.
